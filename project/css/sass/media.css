@@ -1,0 +1,17 @@
+@media(max-width: 575px){
+    .navbar-nav{
+        display: none;
+    }
+    .navbar-text{
+        display: block;
+    }
+    .navbar-dark .navbar-text {
+        color: #F7AC53;
+    }
+}
+@media(min-width: 575px){
+    .navbar-text{
+        display: none;
+    }
+}
+

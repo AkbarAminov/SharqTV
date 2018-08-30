@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sharq TV</title>
+
+    <link rel="stylesheet" href="extensions/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="extensions/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="extensions/bootstrap/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/sass/media.css">
+    <link rel="stylesheet" href="css/sass/style.css">
+</head>
+<body>
+
+<div class="container-fluid">
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar8">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <span class="navbar-text">&nbsp;Sharq TV</span>
+            <div class="navbar-collapse collapse" id="navbar8">
+                <ul class="navbar-nav abs-center-x">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="img/logo-stv.png" alt=""></a>
+                    </li>
+                </ul>
+                <div class="navbar-nav ml-auto button">
+                    <button type="button" class="btn btn-secondary">Регистрация</button>
+                    <button type="button" class="btn btn-secondary">Войти</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="main-body" class="main-body">
+        <div class="program-list">
+            <div class="cur-chanel">
+                <span>канал</span>
+                <p>Discovery</p>
+            </div>
+            <div class="program-list-table">
+
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th scope="col">Передача</th>
+                        <th scope="col">Время</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr class="passive">
+                        <th scope="row">Футбол. Лига чемпионов. Раунд плей-офф. ПСВ (Нидерланды) - БАТЭ (Белоруссия)</th>
+                        <td>12:00</td>
+                    </tr>
+                    <tr class="active">
+                        <th scope="row">Новости, Экономика, Рынки, Наука, Спорт, Журнал, No comment, Погода, Портал</th>
+                        <td>10:00</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Новости, Экономика, Рынки, Наука, Спорт, Журнал, No comment, Погода, Портал</th>
+                        <td>10:00</td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">Новости, Экономика, Рынки, Наука, Спорт, Журнал, No comment, Погода, Портал</th>
+                        <td>10:00</td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">Новости, Экономика, Рынки, Наука, Спорт, Журнал, No comment, Погода, Портал</th>
+                        <td>10:00</td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">Новости, Экономика, Рынки, Наука, Спорт, Журнал, No comment, Погода, Портал</th>
+                        <td>10:00</td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">Новости, Экономика, Рынки, Наука, Спорт, Журнал, No comment, Погода, Портал</th>
+                        <td>10:00</td>
+
+                    </tr>
+                    </tbody>
+                </table>
+
+
+            </div>
+
+
+        </div>
+        <div class="player-window">
+
+            <div class="media-bar">
+
+            </div>
+            <div class="player-holder">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <div id="player-container" class="embed-responsive-item"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="chanel-list-part">
+            <div class="chanel-category">
+                <select class="custom-select">
+                    <option selected>Все каналы</option>
+                    <option value="1">Спортивные</option>
+                    <option value="2">Семейные</option>
+                    <option value="3">Новости</option>
+                </select>
+            </div>
+            <div class="chanel-list"></div>
+         </div>
+    </div>
+
+    <footer class="footer-last">
+        <div class="footer-content">
+
+            <div class="footer-logo">
+                <a href="#"><img src="img/logo-footer.png" alt="logo-footer"></a>
+
+            </div>
+
+            <div class="footer-faq">
+
+                <img src="img/info.png" alt="info">
+                <a href="#"><p>F.A.Q.</p></a>
+            </div>
+
+            <div class="footer-tvbox">
+                <img src="img/tvbox.png" alt="tvbox">
+                <a href="#"><p>Купить Приставку</p></a>
+            </div>
+
+            <div class="footer-mnogouz">
+                <a href="#"><p>MNOGO.UZ</p></a>
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
+<script src="extensions/bootstrap/bootstrap.bundle.min.js"></script>
+<script src="extensions/bootstrap/bootstrap.min.js"></script>
+<script src="script/script.js"></script>
+<script>
+    new Clappr.Player({
+        source: 'http://clappr.io/highline.mp4',
+        mute: false,
+        autoPlay: false,
+        parent: '#player-container',
+        width: '100%',
+        height: '100%'
+    })
+</script>
+
+</body>
+</html>
