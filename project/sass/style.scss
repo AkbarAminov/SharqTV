@@ -5,7 +5,6 @@ body{
   padding: 0;
   margin: 0;
   width: 100%;
-  height: 100vh;
 }
 
 .btn{
@@ -37,6 +36,8 @@ img {
   transform: translateX(-50%);
 }
 
+
+
 .main-body{
   display: flex;
   flex-flow: row wrap;
@@ -67,6 +68,8 @@ img {
     z-index: 2;
   }
 }
+
+
 
 .cur-chanel{
   background-color: #F7AC53;
@@ -107,6 +110,8 @@ img {
   background: #555;
 }
 /*ScrollBar End*/
+
+
 
 
 .program-list-table{
@@ -157,7 +162,10 @@ img {
   height: auto;
   padding: 0 10px;
 }
-
+.player-container{
+  height: 600px;
+  overflow: hidden;
+}
 
 
 
@@ -168,11 +176,12 @@ img {
   height: auto;
 }
 .footer-content{
+  max-width: 1200px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
-  max-width: 1500px;
+
   margin: 0 auto;
   padding: 15px 0;
 
@@ -209,3 +218,87 @@ img {
   }
 
 }
+
+
+
+
+
+/*Sign Page*/
+.form-group{
+  margin-bottom: .3rem;
+}
+.sign-page-background{
+  background-image: url("../../img/background-01.png");
+  background-color: white;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+}
+
+.sign-page-part{
+  background: white;
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 575px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.input-part{
+text-align: center;
+}
+
+/*Sign-in Page*/
+.input-part{
+  p{
+    font-size: 40px;
+  }
+  text-align: center;
+}
+.form-control{
+  border: none;
+  border-bottom: 1px solid #404952;
+  border-radius: 0;
+}
+textarea:focus,
+button:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus{
+  transition: .4s;
+  border-color: rgba(247, 172, 83, 0.8);
+  box-shadow: none;
+  outline: 0 none;
+}
+
+.button-part{
+  margin: 20px 0 10px 0;
+  .btn-success, .btn-info {
+    margin: 10px 0 0 0;
+    width: 210px;
+  }
+  .btn-success:active, .btn-info:active{
+    border: none;
+    box-shadow: none;
+  }
+}
+/*Sign-in Page End*/
+
+
+
+/*Sign-up Page*/
+
+/*Sign-up Page End*/
+
+/*Sign Page End*/
