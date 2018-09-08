@@ -28,17 +28,17 @@ img {
   left: 50%;
   transform: translateX(-50%); }
 
+.navbar-dark .navbar-toggler {
+  color: rgba(255, 255, 255, 0.5);
+  border: none; }
+
 .main-body {
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-  align-items: stretch;
-  align-content: stretch; }
+  flex-flow: row; }
   .main-body .program-list {
     display: flex;
     flex-flow: column nowrap;
     flex: 0 1 15%;
-    box-shadow: 3px 0 20px 0 #777;
     position: relative;
     z-index: 2; }
   .main-body .player-window {
@@ -49,7 +49,6 @@ img {
     display: flex;
     flex-flow: column nowrap;
     flex: 0 1 15%;
-    box-shadow: -3px 0 20px 0 #777;
     background-color: #424242;
     position: relative;
     z-index: 2; }
@@ -57,16 +56,18 @@ img {
 .cur-chanel {
   background-color: #F7AC53;
   width: 100%;
-  height: auto;
-  margin: 10px 0 0 0;
-  padding: 0 10px; }
-  .cur-chanel span {
-    font-size: 15px;
-    color: #707070; }
-  .cur-chanel p {
-    color: #FFFFFF;
-    margin: 0;
-    font-size: 25px; }
+  height: 55px;
+  padding: 10px; }
+  .cur-chanel .canal {
+    text-transform: uppercase;
+    font-size: 10px;
+    line-height: 5px; }
+  .cur-chanel .canal-name {
+    font-size: 25px;
+    line-height: 35px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
 
 /*ScrollBar*/
 /* width */
@@ -86,10 +87,12 @@ img {
   background: #555; }
 
 /*ScrollBar End*/
+.width-sidenavs {
+  height: 45em; }
+
 .program-list-table {
   overflow: auto;
   width: 100%;
-  height: 44em;
   padding-right: 5px; }
 
 .active {
@@ -98,19 +101,28 @@ img {
 .passive {
   color: #BFBFBF; }
 
+th {
+  font-size: 14px; }
+
+td {
+  font-size: 12px; }
+
 .chanel-category {
-  margin: 10px 0 0 0;
   width: 100%;
-  height: auto; }
+  height: 55px; }
 
 .custom-select {
   border-radius: 0;
   border: none;
   background-color: #F7AC53;
-  color: white; }
+  color: white;
+  height: 55px;
+  font-size: 20px; }
   .custom-select option {
-    padding: 5px 0; }
-    .custom-select option:hover {
+    padding: 5px 0;
+    font-size: 14px;
+    border: none; }
+    .custom-select option:focus {
       background-color: grey; }
   .custom-select:focus {
     box-shadow: none; }
@@ -125,11 +137,66 @@ img {
 
 .player-holder {
   height: auto;
-  padding: 0 10px; }
+  padding: 30px; }
 
 .player-container {
-  height: 600px;
+  height: 700px;
   overflow: hidden; }
+
+.chanel-list {
+  width: 100%;
+  overflow: auto;
+  margin: 0;
+  cursor: pointer; }
+  .chanel-list .chanel {
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: center;
+    align-items: center; }
+    .chanel-list .chanel ul {
+      margin: 0;
+      padding: 0; }
+      .chanel-list .chanel ul li {
+        padding: 5px;
+        text-decoration: none;
+        display: flex;
+        flex-flow: row nowrap;
+        align-content: center;
+        align-items: center; }
+        .chanel-list .chanel ul li:hover {
+          background-color: #202023;
+          transition: .5s; }
+          .chanel-list .chanel ul li:hover .chanel-info .chanel-name {
+            color: orange;
+            transition: .5s; }
+
+.chanel-image div {
+  background-color: white;
+  width: 35px;
+  height: 35px;
+  border-radius: 10px; }
+
+.chanel-info {
+  padding: 0 8px;
+  display: flex;
+  white-space: nowrap;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  align-content: stretch; }
+  .chanel-info .chanel-name {
+    font-size: 18px;
+    line-height: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #fff9f2; }
+  .chanel-info .chanel-epg {
+    color: grey;
+    width: 225px;
+    line-height: 15px;
+    font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis; }
 
 .footer-last {
   background: url("../../img/footer-back.png");
@@ -202,27 +269,6 @@ img {
   border-bottom: 1px solid #404952;
   border-radius: 0; }
 
-textarea:focus,
-button:focus,
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="date"]:focus,
-input[type="month"]:focus,
-input[type="time"]:focus,
-input[type="week"]:focus,
-input[type="number"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="search"]:focus,
-input[type="tel"]:focus,
-input[type="color"]:focus {
-  transition: .4s;
-  border-color: rgba(247, 172, 83, 0.8);
-  box-shadow: none;
-  outline: 0 none; }
-
 .button-part {
   margin: 20px 0 10px 0; }
   .button-part .btn-success, .button-part .btn-info {
@@ -236,3 +282,25 @@ input[type="color"]:focus {
 /*Sign-up Page*/
 /*Sign-up Page End*/
 /*Sign Page End*/
+.profile-part {
+  background: white;
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 575px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.tabs {
+  width: 900px;
+  height: 400px; }
+  .tabs ul li a {
+    color: #404952; }
+
+.nav-tabs .nav-link.active {
+  color: #F7AC53; }
+
+.tab-content {
+  font-size: 14px; }
+  .tab-content .active {
+    color: grey; }

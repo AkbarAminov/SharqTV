@@ -1,17 +1,111 @@
-@media(max-width: 575px){
-    .navbar-nav{
+@media(max-width: 1440px){
+    .player-container{
+        height: 550px;
+    }
+    .width-sidenavs{
+        height: 35em;
+    }
+    th{
+        font-size: 12px;
+    }
+    td{
+        font-size: 10px;
+    }
+}
+
+@media(max-width: 960px){
+    th{
+        font-size: 12px;
+    }
+    td{
+        font-size: 10px;
+    }
+    .player-container{
+        height: 385px;
+    }
+    .width-sidenavs{
+        height: 25em;
+    }
+}
+
+@media(max-width: 768px) {
+
+    .main-body{
+        display: flex;
+        flex-flow: column;
+    }
+    .player-window{
+        order: 1;
+    }
+    .chanel-list-part{
+        order: 2;
+    }
+    .cur-chanel{
+
+    }
+    .program-list-table{
         display: none;
     }
-    .navbar-text{
+    .player-holder{
+        padding: 10px 0;
+    }
+    .player-container{
+        height: 400px;
+    }
+
+    .footer-logo{
+        margin:  15px;
+    }
+    .footer-faq{
+        margin:  15px;
+    }
+    .footer-tvbox{
+        margin:  15px;
+    }
+    .footer-mnogouz{
+        margin:  15px;
+    }
+    .footer-last{
+        background: #484848;
+    }
+}
+
+@media(min-width: 768px) {
+    .mobile-bar{
+        display: none;
+    }
+    .program-list{
         display: block;
+    }
+}
+
+@media(max-width: 575px){
+    .nav-item{
+        display: none;
     }
     .navbar-dark .navbar-text {
         color: #F7AC53;
+    }
+    .player-container{
+        height: 350px;
+    }
+    .width-sidenavs{
+        height: 35em;
     }
 }
 @media(min-width: 575px){
     .navbar-text{
         display: none;
+    }
+}
+
+
+
+
+
+@media(max-width: 375px){
+    .player-container{
+        height: 250px;
     }
 }
 
