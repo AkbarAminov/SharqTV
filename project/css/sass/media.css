@@ -1,35 +1,24 @@
-@media(max-width: 1440px){
+@media(min-width: 1440px){
     .player-container{
-        height: 550px;
+        height: 800px;
     }
     .width-sidenavs{
-        height: 35em;
-    }
-    th{
-        font-size: 12px;
-    }
-    td{
-        font-size: 10px;
+        max-height: 800px;
     }
 }
+@media(max-width: 1280px) {
+    .player-container{
+        height: 590px;
+    }
+    .width-sidenavs{
+        height: 38rem;
+    }
 
+}
 @media(max-width: 960px){
-    th{
-        font-size: 12px;
+    .canal-now-part{
+        display: block;
     }
-    td{
-        font-size: 10px;
-    }
-    .player-container{
-        height: 385px;
-    }
-    .width-sidenavs{
-        height: 25em;
-    }
-}
-
-@media(max-width: 768px) {
-
     .main-body{
         display: flex;
         flex-flow: column;
@@ -46,13 +35,48 @@
     .program-list-table{
         display: none;
     }
+    .footer-last{
+        position: relative;
+    }
+
+    .container-fluid{
+        height: auto;
+    }
+    .player-container{
+        height: 550px;
+    }
+    .width-sidenavs{
+        height: 35em;
+    }
+    th{
+        font-size: 12px;
+    }
+    td{
+        font-size: 10px;
+    }
+}
+@media(min-width:960px){
+    .canal-now-part{
+        display: none;
+    }
+}
+
+@media(max-width: 768px) {
+
+
+
+}
+@media(min-width: 960px){
+
+}
+@media(max-width: 768px) {
+
     .player-holder{
         padding: 10px 0;
     }
     .player-container{
         height: 400px;
     }
-
     .footer-logo{
         margin:  15px;
     }

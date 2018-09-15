@@ -6,19 +6,19 @@
 
     <link rel="stylesheet" href="extensions/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="extensions/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="extensions/bootstrap/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/sass/style.css">
     <link rel="stylesheet" href="css/sass/media.css">
 </head>
 <body>
 
-<div class="container-fluid">
+
+<div class="main-container">
     <header>
         <nav class="navbar navbar-expand-sm navbar-dark bg-primary">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar8">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <span class="navbar-text">&nbsp;Sharq TV</span>
+            <span class="navbar-text">Sharq TV</span>
             <div class="navbar-collapse collapse" id="navbar8">
                 <ul class="navbar-nav abs-center-x">
                     <li class="nav-item">
@@ -26,21 +26,32 @@
                     </li>
                 </ul>
                 <div class="navbar-nav ml-auto button">
-                    <button type="button" class="btn btn-secondary">Регистрация</button>
-                    <button type="button" class="btn btn-secondary">Войти</button>
+                    <button type="button" class="btn-nav btn-secondary">Регистрация</button>
+                    <button type="button" class="btn btn-nav btn-secondary">Primary</button>
                 </div>
             </div>
         </nav>
     </header>
 
 
-
     <div id="main-body" class="main-body">
 
         <div class="program-list">
             <div class="cur-chanel">
-                <div class="canal">канал</div>
-                <div class="canal-name">Discovery</div>
+
+                <div class="canal-name-part">
+                    <div class="canal">канал</div>
+                    <div class="canal-name">Discovery</div>
+                </div>
+
+                <div class="canal-now-part">
+                    <div class="current-program-part">
+                        <div class="canal">сейчас на канале</div>
+                        <div title="вывфывфаыфв"><p class="canal-name">Футбол. Лига чемпионов. Раунд плей-офф. ПСВ
+                            (Нидерланды) - БАТЭ (Белоруссия)</p></div>
+                    </div>
+                </div>
+
             </div>
             <div class="program-list-table width-sidenavs">
 
@@ -53,7 +64,8 @@
                     </thead>
                     <tbody>
                     <tr class="passive">
-                        <th scope="row">Футбол. Лига чемпионов. Раунд плей-офф. ПСВ (Нидерланды) - БАТЭ (Белоруссия)</th>
+                        <th scope="row">Футбол. Лига чемпионов. Раунд плей-офф. ПСВ (Нидерланды) - БАТЭ (Белоруссия)
+                        </th>
                         <td>12:00</td>
                     </tr>
                     <tr class="active">
@@ -102,7 +114,7 @@
             </div>
 
             <div class="player-holder">
-                    <div class="player-container"></div>
+                <div class="player-container"></div>
             </div>
         </div>
 
@@ -127,62 +139,10 @@
                                     Discovery
                                 </div>
                                 <div class="chanel-epg">
-                                   Новости, Экономика, Рынки, Наука, Спорт
+                                    <p>Новости, Экономика, Рынки, Наука, Спортd;lsfk;leskf;welkf;lwekf;elk</p>
                                 </div>
                             </div>
                         </li>
-                        <li>
-                            <div class="chanel-image">
-                                <div></div>
-                            </div>
-                            <div class="chanel-info">
-                                <div class="chanel-name">
-                                    Discovery
-                                </div>
-                                <div class="chanel-epg">
-                                    Новости, Экономика, Рынки, Наука, Спорт
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="chanel-image">
-                                <div></div>
-                            </div>
-                            <div class="chanel-info">
-                                <div class="chanel-name">
-                                    Discovery
-                                </div>
-                                <div class="chanel-epg">
-                                    Новости, Экономика, Рынки, Наука, Спорт
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="chanel-image">
-                                <div></div>
-                            </div>
-                            <div class="chanel-info">
-                                <div class="chanel-name">
-                                    Discovery
-                                </div>
-                                <div class="chanel-epg">
-                                    Новости, Экономика, Рынки, Наука, Спорт
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                        <div class="chanel-image">
-                            <div></div>
-                        </div>
-                        <div class="chanel-info">
-                            <div class="chanel-name">
-                                Discovery
-                            </div>
-                            <div class="chanel-epg">
-                                Новости, Экономика, Рынки, Наука, Спорт
-                            </div>
-                        </div>
-                    </li>
                         <li>
                             <div class="chanel-image">
                                 <div></div>
@@ -299,31 +259,7 @@
                                     Новости, Экономика, Рынки, Наука, Спорт
                                 </div>
                             </div>
-                        </li> <li>
-                        <div class="chanel-image">
-                            <div></div>
-                        </div>
-                        <div class="chanel-info">
-                            <div class="chanel-name">
-                                Discovery
-                            </div>
-                            <div class="chanel-epg">
-                                Новости, Экономика, Рынки, Наука, Спорт
-                            </div>
-                        </div>
-                    </li> <li>
-                        <div class="chanel-image">
-                            <div></div>
-                        </div>
-                        <div class="chanel-info">
-                            <div class="chanel-name">
-                                Discovery
-                            </div>
-                            <div class="chanel-epg">
-                                Новости, Экономика, Рынки, Наука, Спорт
-                            </div>
-                        </div>
-                    </li>
+                        </li>
                         <li>
                             <div class="chanel-image">
                                 <div></div>
@@ -349,43 +285,7 @@
                                     Новости, Экономика, Рынки, Наука, Спорт
                                 </div>
                             </div>
-                        </li> <li>
-                        <div class="chanel-image">
-                            <div></div>
-                        </div>
-                        <div class="chanel-info">
-                            <div class="chanel-name">
-                                Discovery
-                            </div>
-                            <div class="chanel-epg">
-                                Новости, Экономика, Рынки, Наука, Спорт
-                            </div>
-                        </div>
-                    </li> <li>
-                        <div class="chanel-image">
-                            <div></div>
-                        </div>
-                        <div class="chanel-info">
-                            <div class="chanel-name">
-                                Discovery
-                            </div>
-                            <div class="chanel-epg">
-                                Новости, Экономика, Рынки, Наука, Спорт
-                            </div>
-                        </div>
-                    </li> <li>
-                        <div class="chanel-image">
-                            <div></div>
-                        </div>
-                        <div class="chanel-info">
-                            <div class="chanel-name">
-                                Discovery
-                            </div>
-                            <div class="chanel-epg">
-                                Новости, Экономика, Рынки, Наука, Спорт
-                            </div>
-                        </div>
-                    </li>
+                        </li>
                         <li>
                             <div class="chanel-image">
                                 <div></div>
@@ -399,12 +299,127 @@
                                 </div>
                             </div>
                         </li>
-
+                        <li>
+                            <div class="chanel-image">
+                                <div></div>
+                            </div>
+                            <div class="chanel-info">
+                                <div class="chanel-name">
+                                    Discovery
+                                </div>
+                                <div class="chanel-epg">
+                                    Новости, Экономика, Рынки, Наука, Спорт
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="chanel-image">
+                                <div></div>
+                            </div>
+                            <div class="chanel-info">
+                                <div class="chanel-name">
+                                    Discovery
+                                </div>
+                                <div class="chanel-epg">
+                                    Новости, Экономика, Рынки, Наука, Спорт
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="chanel-image">
+                                <div></div>
+                            </div>
+                            <div class="chanel-info">
+                                <div class="chanel-name">
+                                    Discovery
+                                </div>
+                                <div class="chanel-epg">
+                                    Новости, Экономика, Рынки, Наука, Спорт
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="chanel-image">
+                                <div></div>
+                            </div>
+                            <div class="chanel-info">
+                                <div class="chanel-name">
+                                    Discovery
+                                </div>
+                                <div class="chanel-epg">
+                                    Новости, Экономика, Рынки, Наука, Спорт
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="chanel-image">
+                                <div></div>
+                            </div>
+                            <div class="chanel-info">
+                                <div class="chanel-name">
+                                    Discovery
+                                </div>
+                                <div class="chanel-epg">
+                                    Новости, Экономика, Рынки, Наука, Спорт
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="chanel-image">
+                                <div></div>
+                            </div>
+                            <div class="chanel-info">
+                                <div class="chanel-name">
+                                    Discovery
+                                </div>
+                                <div class="chanel-epg">
+                                    Новости, Экономика, Рынки, Наука, Спорт
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="chanel-image">
+                                <div></div>
+                            </div>
+                            <div class="chanel-info">
+                                <div class="chanel-name">
+                                    Discovery
+                                </div>
+                                <div class="chanel-epg">
+                                    Новости, Экономика, Рынки, Наука, Спорт
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="chanel-image">
+                                <div></div>
+                            </div>
+                            <div class="chanel-info">
+                                <div class="chanel-name">
+                                    Discovery
+                                </div>
+                                <div class="chanel-epg">
+                                    Новости, Экономика, Рынки, Наука, Спорт
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="chanel-image">
+                                <div></div>
+                            </div>
+                            <div class="chanel-info">
+                                <div class="chanel-name">
+                                    Discovery
+                                </div>
+                                <div class="chanel-epg">
+                                    Новости, Экономика, Рынки, Наука, Спорт
+                                </div>
+                            </div>
+                        </li>
                     </ul>
-
                 </div>
             </div>
-         </div>
+        </div>
     </div>
 
     <footer class="footer-last">
@@ -433,17 +448,15 @@
 </div>
 
 
-
-
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
-<script src="extensions/bootstrap/bootstrap.bundle.min.js"></script>
 <script src="extensions/bootstrap/bootstrap.min.js"></script>
+<script src="extensions/bootstrap/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
 <script src="script/script.js"></script>
 <script>
     new Clappr.Player({
-        source: 'http://clappr.io/highline.mp4',
+        source: 'http://clapp' +
+            'r.io/highline.mp4',
         parent: ".player-container",
         mute: false,
         autoPlay: false,
